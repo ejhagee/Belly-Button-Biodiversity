@@ -9,7 +9,7 @@ import numpy as np
 
 #sqlalchemy to access sqlite database
 import sqlalchemy
-from sqlalchemy.orm.automap import automap_base
+from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
 from sqlalchemy import create_engine
 
