@@ -15,7 +15,7 @@ from sqlalchemy import create_engine
 
 #flask to create server
 from flask import Flask, jsonify, render_template
-from flask_sqlalchemy import sqlalchemy
+from flask_sqlalchemy import SQLAlchemy
 
 #create flask server
 app = Flask(__name__)
@@ -35,7 +35,7 @@ Base.prepare(db.engine, reflect=True)
 
 #save references to each table
 Samples_Metadata = Base.classes.sample_metadata
-Samples = Base.classes.Samples
+Samples = Base.classes.samples
 
 ###########################################
 # Flask Routes
