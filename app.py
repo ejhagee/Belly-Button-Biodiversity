@@ -18,7 +18,7 @@ from flask import Flask, jsonify, render_template
 from flask_sqlalchemy import SQLAlchemy
 
 #create flask server
-app = Flask(__name__)
+app = Flask(__name__, static_url_path = '')
 
 #########################################
 # Database Setup
@@ -102,13 +102,16 @@ def samples(sample):
 
     #Filter the data based on the sample number and
     #only keep rows with values above 1
-    sample_data = df.loc[df[sample] > 1, ["otu_id", "otu_label", sample]]
+    sampled_data = df.loc[df[sample] > 1, ["otu_id", "otu_label", sample]]
+
+    #Sort sample_values in descending order
+    sample_data = sampled_data.sort_values(by = sample, ascending = False)
 
     #Format the data to send as json
     data = {
         "otu_ids": sample_data.otu_id.values.tolist(),
         "sample_values": sample_data[sample].values.tolist(),
-        "otu_lables": sample_data.otu_label.values.tolist()
+        "otu_labels": sample_data.otu_label.values.tolist()
     }
 
     #return jsonify'd data
