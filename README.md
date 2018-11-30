@@ -14,4 +14,8 @@ Javascript is used to access Flask's json outputs.  Then, Plotly.js is used to c
  - The templates folder is used by Flask to render web pages.  One folder, index.html contains the home page template.
  - The Python file app.py produces the back end of the server, accessing the data, rendering the homepage for the javascript files, and also producing pages for sample data that can be accessed in the javascript scripts.
  - The file requirements.txt contains all python libraries required for the app.py file.  Running `pip install -r requirements.txt` in the command line will install the needed packages.
+ - Procfile contains instructions for this application to run when deployed to Heroku.
  - This file, README.md gives a brief description about the application.
+
+# Deployment
+The application is deployed on Heroku [here](https://belly-button-final-erichagee.herokuapp.com/).
