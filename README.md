@@ -1,6 +1,8 @@
 # Belly-Button-Biodiversity
 Web Dashboard Displaying Data About Belly Button Microbes Using Javascript and Python Flask
 
+![screenshot](https://github.com/ejhagee/Belly-Button-Biodiversity/blob/master/images/screenshot.png)
+
 # Description
 This project uses data originally collected by the [Belly Button Biodiversity Dataset](http://robdunnlab.com/projects/belly-button-biodiversity/) which contains information about microbes found in belly buttons.
 
