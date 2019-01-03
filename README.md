@@ -4,6 +4,8 @@ Web Dashboard Displaying Data About Belly Button Microbes Using Javascript and P
 ![screenshot](https://github.com/ejhagee/Belly-Button-Biodiversity/blob/master/images/screenshot.png)
 
 # Description
+In this hypothetical situation, we have data about many samples of microbes taken from various human belly buttons.  We wish to visualize the most common microbes in each sample.
+
 This project uses data originally collected by the [Belly Button Biodiversity Dataset](http://robdunnlab.com/projects/belly-button-biodiversity/) which contains information about microbes found in belly buttons.
 
 The data stored in a sqlite SQL database.  The Python library SQLAlchemy is used to access the database which is then deployed in a server by the Python Flask library.  Flask is also used to render the web dashboard.
